@@ -92,7 +92,30 @@ Here is a brief overview of the project's structure:
 - `Resources/`: Resource files for the application.
 - `Tests/`: Contains unit tests for the application.
 
-## Further Reading
+## Using a Process Manager
+
+Install pm2:
+
+```sh
+npm install -g pm2
+```
+
+Run your app:
+```sh
+pm2 start swift -- run
+```
+Stop your app:
+```sh
+pm2 stop swift
+```
+Restart your app:
+```sh
+pm2 restart swift
+```
+Debugging:
+```sh
+pm2 logs swift
+```
 
 For more information on Vapor and its features, check out the [official Vapor documentation](https://docs.vapor.codes/).
 
